@@ -82,19 +82,19 @@ create table Semabox (
 	type_disque VARCHAR(4),
 	taille_disque VARCHAR(5),
 	etat VARCHAR(50),
-	id_prestataire INT,
+	id_clientfinal INT,
 	id_semaos INT
 );
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (1, '4A-0C-C9-78-AE-51', '17.4.74.196', '241.247.196.108', 'Intel Core i7-10700K', 128, 'HDD', 1000, false, 1, 10);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (2, 'F8-C3-C5-1E-E1-BF', '152.77.12.227', '162.178.140.17', 'Intel Core i7-10700K', 512, 'SSHD', 16000, false, 1, 7);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (3, '63-BF-CD-E2-1B-89', '41.190.122.191', '31.71.190.159', 'AMD Ryzen 3 3300X', 512, 'HDD', 8000, true, 1, 9);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (4, 'D2-B4-E6-69-4A-41', '158.17.40.140', '237.178.147.170', 'AMD Ryzen 7 5800X', 8, 'SSHD', 1000, true, 1, 4);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (5, 'CA-B9-67-12-6D-CB', '18.53.82.148', '47.49.30.44', 'Intel Core i9-11900K', 32, 'SSHD', 4000, false, 7, 10);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (6, '23-90-C0-16-34-BD', '172.92.127.201', '228.53.13.238', 'Intel Core i7-10700K', 2028, 'SSD', 4000, true, 7, 6);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (7, 'C9-04-DC-99-D8-AA', '54.192.75.140', '122.38.28.250', 'Intel Core i7-10700K', 128, 'SSHD', 1500, true, 7, 4);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (8, 'A9-3F-BD-C2-94-C7', '36.84.81.129', '70.121.201.10', 'Intel Core i3-10100', 256, 'HDD', 4000, false, 1, 9);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (9, '8C-B0-0D-89-4B-E6', '55.250.98.209', '220.254.158.247', 'AMD Ryzen 7 5800X', 128, 'HDD', 8000, false, 3, 10);
-insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (10, '4F-2A-9D-58-05-84', '146.58.44.101', '48.2.75.42', 'Intel Core i7-10700K', 512, 'HDD', 4000, false, 1, 1);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (1, '4A-0C-C9-78-AE-51', '17.4.74.196', '241.247.196.108', 'Intel Core i7-10700K', 128, 'HDD', 1000, false, 1, 10);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (2, 'F8-C3-C5-1E-E1-BF', '152.77.12.227', '162.178.140.17', 'Intel Core i7-10700K', 512, 'SSHD', 16000, false, 1, 7);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (3, '63-BF-CD-E2-1B-89', '41.190.122.191', '31.71.190.159', 'AMD Ryzen 3 3300X', 512, 'HDD', 8000, true, 1, 9);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (4, 'D2-B4-E6-69-4A-41', '158.17.40.140', '237.178.147.170', 'AMD Ryzen 7 5800X', 8, 'SSHD', 1000, true, 1, 4);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (5, 'CA-B9-67-12-6D-CB', '18.53.82.148', '47.49.30.44', 'Intel Core i9-11900K', 32, 'SSHD', 4000, false, 7, 10);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (6, '23-90-C0-16-34-BD', '172.92.127.201', '228.53.13.238', 'Intel Core i7-10700K', 2028, 'SSD', 4000, true, 7, 6);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (7, 'C9-04-DC-99-D8-AA', '54.192.75.140', '122.38.28.250', 'Intel Core i7-10700K', 128, 'SSHD', 1500, true, 7, 4);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (8, 'A9-3F-BD-C2-94-C7', '36.84.81.129', '70.121.201.10', 'Intel Core i3-10100', 256, 'HDD', 4000, false, 1, 9);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (9, '8C-B0-0D-89-4B-E6', '55.250.98.209', '220.254.158.247', 'AMD Ryzen 7 5800X', 128, 'HDD', 8000, false, 3, 10);
+insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_clientfinal, id_semaos) values (10, '4F-2A-9D-58-05-84', '146.58.44.101', '48.2.75.42', 'Intel Core i7-10700K', 512, 'HDD', 4000, false, 1, 1);
 
 
 create table Script (
