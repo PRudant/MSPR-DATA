@@ -1,5 +1,5 @@
 create table Prestataire (
-	id_prestataire INT,
+	id_prestataire INT PRIMARY KEY,
 	nom VARCHAR(50),
 	adresse VARCHAR(50),
 	numero VARCHAR(50),
@@ -18,7 +18,7 @@ insert into Prestataire (id_prestataire, nom, adresse, numero, email) values (10
 
 
 create table ClientFinal (
-	id_client INT,
+	id_client INT PRIMARY KEY,
 	nom VARCHAR(50),
 	siret VARCHAR(50),
 	adresse VARCHAR(50),
@@ -38,7 +38,7 @@ insert into ClientFinal (id_client, nom, siret, adresse, numero, email) values (
 
 
 create table Technicien (
-	id_technicien INT,
+	id_technicien INT PRIMARY KEY,
 	nom VARCHAR(50),
 	id_prestataire INT,
 	numero VARCHAR(50),
@@ -57,7 +57,7 @@ insert into Technicien (id_technicien, nom, id_prestataire, numero, email) value
 
 
 create table Semaos (
-	id_semaos INT,
+	id_semaos INT PRIMARY KEY,
 	version INT
 );
 insert into Semaos (id_semaos, version) values (1, 1);
@@ -73,7 +73,7 @@ insert into Semaos (id_semaos, version) values (10, 10);
 
 
 create table Semabox (
-	id_semabox INT,
+	id_semabox INT PRIMARY KEY,
 	numero_serie VARCHAR(50),
 	adresse_ip_defaut VARCHAR(20),
 	adresse_ip_vpn VARCHAR(20),
@@ -99,7 +99,7 @@ insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn
 -
 
 create table Script (
-	id_script INT,
+	id_script INT PRIMARY KEY,
 	nom VARCHAR(50)
 );
 insert into Script (id_script, nom) values (1, 'Konklab');
@@ -115,7 +115,7 @@ insert into Script (id_script, nom) values (10, 'Kanlam');
 
 
 create table Deploiement (
-	id_deploiement INT,
+	id_deploiement INT PRIMARY KEY,
 	id_semabox INT,
 	id_client INT,
 	id_technicien INT,
@@ -137,7 +137,7 @@ insert into Deploiement (id_deploiement, id_semabox, id_client, id_technicien, d
 
 
 create table Incident (
-	id_incident INT,
+	id_incident INT PRIMARY KEY,
 	id_semabox INT,
 	description VARCHAR(18),
 	date_incident DATE
@@ -165,7 +165,7 @@ insert into Incident (id_incident, id_semabox, description, date_incident) value
 
 
 create table Redemarrage (
-	id_redemarrage INT,
+	id_redemarrage INT PRIMARY KEY,
 	id_semabox INT,
 	horodatage DATE,
 	motif VARCHAR(10)
