@@ -96,7 +96,6 @@ insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn
 insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (9, '8C-B0-0D-89-4B-E6', '55.250.98.209', '220.254.158.247', 'AMD Ryzen 7 5800X', 128, 'HDD', 8000, false, 3, 10);
 insert into Semabox (id_semabox, numero_serie, adresse_ip_defaut, adresse_ip_vpn, cpu, ram, type_disque, taille_disque, etat, id_prestataire, id_semaos) values (10, '4F-2A-9D-58-05-84', '146.58.44.101', '48.2.75.42', 'Intel Core i7-10700K', 512, 'HDD', 4000, false, 1, 1);
 
--
 
 create table Script (
 	id_script INT PRIMARY KEY,
