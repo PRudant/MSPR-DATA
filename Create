@@ -1,0 +1,73 @@
+create table Prestataire (
+	id_prestataire INT PRIMARY KEY,
+	nom VARCHAR(50),
+	adresse VARCHAR(50),
+	numero VARCHAR(50),
+	email VARCHAR(50)
+);
+
+create table ClientFinal (
+	id_client INT PRIMARY KEY,
+	nom VARCHAR(50),
+	siret VARCHAR(50),
+	adresse VARCHAR(50),
+	numero VARCHAR(50),
+	email VARCHAR(50)
+);
+
+create table Technicien (
+	id_technicien INT PRIMARY KEY,
+	nom VARCHAR(50),
+	id_prestataire INT,
+	numero VARCHAR(50),
+	email VARCHAR(50)
+);
+
+create table Semaos (
+	id_semaos INT PRIMARY KEY,
+	version INT
+);
+
+create table Semabox (
+	id_semabox INT PRIMARY KEY,
+	numero_serie VARCHAR(50),
+	adresse_ip_defaut VARCHAR(20),
+	adresse_ip_vpn VARCHAR(20),
+	cpu VARCHAR(20),
+	ram VARCHAR(4),
+	type_disque VARCHAR(4),
+	taille_disque VARCHAR(5),
+	etat VARCHAR(50),
+	id_client INT,
+	id_semaos INT
+);
+
+create table Script (
+	id_script INT PRIMARY KEY,
+	nom VARCHAR(50)
+);
+
+create table Deploiement (
+	id_deploiement INT PRIMARY KEY,
+	id_semabox INT,
+	id_client INT,
+	id_technicien INT,
+	date_deploiement DATE,
+	motif VARCHAR(12),
+	duree INT,
+	date_recuperation DATE
+);
+
+create table Incident (
+	id_incident INT PRIMARY KEY,
+	id_semabox INT,
+	description VARCHAR(18),
+	date_incident DATE
+);
+
+create table Redemarrage (
+	id_redemarrage INT PRIMARY KEY,
+	id_semabox INT,
+	horodatage DATE,
+	motif VARCHAR(10)
+);
